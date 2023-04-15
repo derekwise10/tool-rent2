@@ -4,7 +4,7 @@ import { Provider } from "react-redux";
 import HomeScreen from "./screens/HomeScreen";
 import MapScreen from "./screens/MapScreen";
 import MessagesScreen from "./screens/MessagesScreen";
-import RatingsScreen from "./screens/RatingsScreen";
+import AccountScreen from "./screens/AccountScreen";
 import { store } from "./store";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import 'react-native-gesture-handler';
@@ -41,8 +41,8 @@ export default function App() {
           }}
         />
         <Stack.Screen
-                  name= "RatingsScreen"
-                  component={RatingsScreen}
+                  name= "AccountScreen"
+                  component={AccountScreen}
                   options={{
                   headerShown: false,
                   }}

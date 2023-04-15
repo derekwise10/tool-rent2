@@ -20,7 +20,7 @@ const data =[
   id: "789",
   title: "User Page",
   image: "https://assets.onlinelabels.com/images/clip-art/acspike/acspike_male_user_icon.png",
-  screen: "RatingsScreen",
+  screen: "AccountScreen",
   },
   ];
 

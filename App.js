@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from "react-native";
 import { Provider } from "react-redux";
 import HomeScreen from "./screens/HomeScreen";
 import MapScreen from "./screens/MapScreen";
-import EatsScreen from "./screens/EatsScreen";
+import MessagesScreen from "./screens/MessagesScreen";
 import RatingsScreen from "./screens/RatingsScreen";
 import { store } from "./store";
 import { SafeAreaProvider } from "react-native-safe-area-context";
@@ -34,8 +34,8 @@ export default function App() {
       }}
     />
     <Stack.Screen
-          name= "EatsScreen"
-          component={EatsScreen}
+          name= "MessagesScreen"
+          component={MessagesScreen}
           options={{
           headerShown: false,
           }}

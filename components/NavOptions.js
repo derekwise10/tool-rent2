@@ -14,7 +14,7 @@ const data =[
  id: "456",
  title: "Messages",
  image: "https://www.pngitem.com/pimgs/m/139-1397202_imessage-iphone-text-messaging-transparent-background-bubble-message.png",
- screen: "EatsScreen",
+ screen: "MessagesScreen",
   },
   {
   id: "789",

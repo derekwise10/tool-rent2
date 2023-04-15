@@ -2,7 +2,7 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import { Provider } from "react-redux";
 import HomeScreen from "./screens/HomeScreen";
-import MapScreen from "./screens/MapScreen";
+import ToolScreen from "./screens/ToolScreen";
 import MessagesScreen from "./screens/MessagesScreen";
 import AccountScreen from "./screens/AccountScreen";
 import { store } from "./store";
@@ -27,8 +27,8 @@ export default function App() {
     }}
   />
    <Stack.Screen
-      name= "MapScreen"
-      component={MapScreen}
+      name= "ToolScreen"
+      component={ToolScreen}
       options={{
       headerShown: false,
       }}

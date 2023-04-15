@@ -2,7 +2,7 @@ import React from "react"
 import {StyleSheet, Text, View, SafeAreaView, Image } from "react-native";
 import tw from 'tailwind-react-native-classnames';
 
-const MapScreen = () => {
+const ToolScreen = () => {
     return (
    <SafeAreaView style={tw `bg-white h-full p-10`}>
           <View>
@@ -51,6 +51,6 @@ const MapScreen = () => {
 
 }
 
-export default MapScreen
+export default ToolScreen
 
 const style = StyleSheet.create({})

@@ -23,7 +23,10 @@ const ToolScreen = ({navigation}) => {
       image: "https://jamaicaclassifiedonline.com/images/2020/10/28/134621/power-tools-xj7q3sly_0.jpg"
     }
   ];
-
+  const handleToolPress = (tool) => {
+    navigation.navigate('ToolDetailsScreen', {tool});
+  };
+  
   return (
     <SafeAreaView style={tw `bg-white h-full p-10`}>
       <ScrollView>

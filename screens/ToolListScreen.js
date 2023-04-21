@@ -2,7 +2,7 @@ import React from "react"
 import {StyleSheet, Text, View, SafeAreaView, Image, ScrollView, TouchableOpacity } from "react-native";
 import tw from 'tailwind-react-native-classnames';
 
-const ToolScreen = ({navigation}) => {
+const ToolListScreen = ({navigation}) => {
   const tools = [
     {
       name: "Power Drill",
@@ -55,5 +55,5 @@ const ToolScreen = ({navigation}) => {
   );
 };
 
-export default ToolScreen;
+export default ToolListScreen;
 

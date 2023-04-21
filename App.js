@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from "react-native";
 import { Provider } from "react-redux";
 import HomeScreen from "./screens/HomeScreen";
 import ToolScreen from "./screens/ToolScreen";
+import ToolListScreen from "./screens/ToolListScreen";
 import MessagesScreen from "./screens/MessagesScreen";
 import AccountScreen from "./screens/AccountScreen";
 import { store } from "./store";
@@ -33,6 +34,13 @@ export default function App() {
       headerShown: false,
       }}
     />
+   <Stack.Screen
+      name= "ToolListScreen"
+      component={ToolListScreen}
+      options={{
+      headerShown: false,
+      }}
+    />
     <Stack.Screen
           name= "MessagesScreen"
           component={MessagesScreen}
@@ -47,6 +55,7 @@ export default function App() {
                   headerShown: false,
                   }}
                 />
+
   </Stack.Navigator>
 
       </SafeAreaProvider>

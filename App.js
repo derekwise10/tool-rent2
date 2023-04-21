@@ -7,6 +7,7 @@ import ToolListScreen from "./screens/ToolListScreen";
 import MessagesScreen from "./screens/MessagesScreen";
 import AccountScreen from "./screens/AccountScreen";
 import ToolDetailsScreen from "./screens/ToolDetailsScreen";
+import ToolDetailsListScreen from "./screens/ToolDetailsListScreen";
 import { store } from "./store";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import 'react-native-gesture-handler';
@@ -46,6 +47,13 @@ export default function App() {
         <Stack.Screen
           name="ToolDetailsScreen"
           component={ToolDetailsScreen}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="ToolDetailsListScreen"
+          component={ToolDetailsListScreen}
           options={{
             headerShown: false,
           }}

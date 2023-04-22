@@ -6,16 +6,10 @@ import { useNavigation } from "@react-navigation/native";
 const data =[
  {
  id: "123",
- title: "Rent a Tool",
+ title: "Rent or List a Tool",
  image: "https://clipground.com/images/cartoon-tools-clipart-1.png",
  screen: "locationscreen",
  },
- {
- id: "1011",
- title: "List a Tool",
- image: "https://clipground.com/images/cartoon-tools-clipart-1.png",
- screen: "ToolListScreen",
-},
  {
  id: "456",
  title: "Messages",

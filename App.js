@@ -5,6 +5,7 @@ import HomeScreen from "./screens/HomeScreen";
 import ToolScreen from "./screens/ToolScreen";
 import MessagesScreen from "./screens/MessagesScreen";
 import AccountScreen from "./screens/AccountScreen";
+import locationscreen from "./screens/locationscreen";
 import { store } from "./store";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import 'react-native-gesture-handler';
@@ -47,6 +48,13 @@ export default function App() {
                   headerShown: false,
                   }}
                 />
+            <Stack.Screen
+                              name= "locationscreen"
+                              component={locationscreen}
+                              options={{
+                              headerShown: false,
+                              }}
+                            />
   </Stack.Navigator>
 
       </SafeAreaProvider>

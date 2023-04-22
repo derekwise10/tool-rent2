@@ -11,7 +11,7 @@ import NavOptions from "../components/NavOptions";
 import ToolScreen from "../screens/ToolScreen";
 import ToolDetailsScreen from "../screens/ToolDetailsScreen";
 
-const MessagesScreen = ({navigation}) => {
+const Locationscreen = ({navigation}) => {
 
  const dispatch =useDispatch();
     return (
@@ -70,6 +70,6 @@ const MessagesScreen = ({navigation}) => {
 
 }
 
-export default MessagesScreen
+export default locationscreen
 
 const style = StyleSheet.create({})

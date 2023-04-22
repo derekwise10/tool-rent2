@@ -14,6 +14,6 @@ const MessagesScreen = () => {
 
 }
 
-export default AccountScreen
+export default MessagesScreen
 
 const style = StyleSheet.create({})

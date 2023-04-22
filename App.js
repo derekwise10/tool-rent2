@@ -3,11 +3,8 @@ import { StyleSheet, Text, View } from "react-native";
 import { Provider } from "react-redux";
 import HomeScreen from "./screens/HomeScreen";
 import ToolScreen from "./screens/ToolScreen";
-import ToolListScreen from "./screens/ToolListScreen";
 import MessagesScreen from "./screens/MessagesScreen";
 import AccountScreen from "./screens/AccountScreen";
-import ToolDetailsScreen from "./screens/ToolDetailsScreen";
-import ToolDetailsListScreen from "./screens/ToolDetailsListScreen";
 import { store } from "./store";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import 'react-native-gesture-handler';
@@ -36,28 +33,6 @@ export default function App() {
       headerShown: false,
       }}
     />
-  
-   <Stack.Screen
-      name= "ToolListScreen"
-      component={ToolListScreen}
-      options={{
-      headerShown: false,
-      }}
-    />
-        <Stack.Screen
-          name="ToolDetailsScreen"
-          component={ToolDetailsScreen}
-          options={{
-            headerShown: false,
-          }}
-        />
-        <Stack.Screen
-          name="ToolDetailsListScreen"
-          component={ToolDetailsListScreen}
-          options={{
-            headerShown: false,
-          }}
-        />
     <Stack.Screen
           name= "MessagesScreen"
           component={MessagesScreen}
@@ -72,7 +47,6 @@ export default function App() {
                   headerShown: false,
                   }}
                 />
-
   </Stack.Navigator>
 
       </SafeAreaProvider>

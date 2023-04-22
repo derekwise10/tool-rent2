@@ -8,7 +8,7 @@ const data =[
  id: "123",
  title: "Rent a Tool",
  image: "https://clipground.com/images/cartoon-tools-clipart-1.png",
- screen: "ToolScreen",
+ screen: "locationscreen",
  },
  {
  id: "1011",
@@ -19,7 +19,7 @@ const data =[
  {
  id: "456",
  title: "Messages",
- image: "https://www.pngitem.com/pimgs/m/139-1397202_imessage-iphone-text-messaging-transparent-background-bubble-message.png",
+ image: "https://static.vecteezy.com/system/resources/previews/000/394/020/original/illustration-of-speech-bubble-vector.jpg",
  screen: "MessagesScreen",
   },
   {

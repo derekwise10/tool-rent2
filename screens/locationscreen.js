@@ -8,10 +8,10 @@ import { setDestination, setOrigin } from "../slices/navSlice";
 import Map from "../components/Map";
 import MapView from 'react-native-maps';
 import NavOptions from "../components/NavOptions";
-import ToolScreen from "../screens/ToolScreen";
-import ToolDetailsScreen from "../screens/ToolDetailsScreen";
+import ToolScreen from "./ToolScreen";
+import ToolDetailsScreen from "./ToolDetailsScreen";
 
-const MessagesScreen = ({navigation}) => {
+const LocationScreen = ({navigation}) => {
 
  const dispatch =useDispatch();
     return (
@@ -70,6 +70,6 @@ const MessagesScreen = ({navigation}) => {
 
 }
 
-export default MessagesScreen
+export default LocationScreen
 
 const style = StyleSheet.create({})

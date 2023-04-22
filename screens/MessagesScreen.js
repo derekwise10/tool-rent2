@@ -2,7 +2,7 @@ import React from "react"
 import {StyleSheet, Text, View, SafeAreaView } from "react-native";
 import tw from 'tailwind-react-native-classnames';
 
-const AccountScreen = () => {
+const MessagesScreen = () => {
     return (
    <SafeAreaView style={tw `bg-white h-full p-10`}>
           <View>
@@ -14,6 +14,6 @@ const AccountScreen = () => {
 
 }
 
-export default AccountScreen
+export default MessagesScreen
 
 const style = StyleSheet.create({})

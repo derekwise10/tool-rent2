@@ -54,13 +54,13 @@ const LocationScreen = ({navigation}) => {
 
 
         <Button
-        title="See available Tools in your area"
+        title="See available Tools in your Area"
         onPress={()=> navigation.navigate("ToolScreen")}
         />
         <Button
-        title="Return to the Home Screen"
+        title="List a Tool in your Area"
         color="#f194ff"
-        onPress={() => navigation.navigate("ToolDetailsScreen")}
+        onPress={() => navigation.navigate("ListingScreen")}
         />
 
     </View>

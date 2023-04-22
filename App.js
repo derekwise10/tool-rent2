@@ -11,7 +11,7 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import ToolDetailsScreen from "./screens/ToolDetailsScreen";
+import ListingScreen from "./screens/ListingScreen";
 
 
 export default function App() {
@@ -58,8 +58,8 @@ export default function App() {
                               }}
                             />
                             <Stack.Screen
-                                                          name= "ToolDetailsScreen"
-                                                          component={ToolDetailsScreen}
+                                                          name= "ListingScreen"
+                                                          component={ListingScreen}
                                                           options={{
                                                           headerShown: false,
                                                           }}

@@ -9,6 +9,7 @@ import Map from "../components/Map";
 import MapView from 'react-native-maps';
 import NavOptions from "../components/NavOptions";
 import ToolScreen from "../screens/ToolScreen";
+import ToolDetailsScreen from "../screens/ToolDetailsScreen";
 
 const MessagesScreen = ({navigation}) => {
 
@@ -59,7 +60,7 @@ const MessagesScreen = ({navigation}) => {
         <Button
         title="Return to the Home Screen"
         color="#f194ff"
-        onPress={() => navigation.navigate("HomeScreen")}
+        onPress={() => navigation.navigate("ToolDetailsScreen")}
         />
 
     </View>

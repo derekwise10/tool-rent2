@@ -8,7 +8,7 @@ const data =[
  id: "123",
  title: "Rent or List a Tool",
  image: "https://clipground.com/images/cartoon-tools-clipart-1.png",
- screen: "locationscreen",
+ screen: "LocationScreen",
  },
  {
  id: "456",

@@ -1,6 +1,10 @@
 import React from "react"
 import {StyleSheet, Text, View, SafeAreaView, Image, ScrollView, TouchableOpacity } from "react-native";
 import tw from 'tailwind-react-native-classnames';
+import HomeScreen from "../screens/HomeScreen";
+import NavOptions from "../components/NavOptions";
+import ContactRenterScreen from "../screens/ContactRenterScreen";
+
 
 const ToolScreen = ({navigation}) => {
   const tools = [
@@ -21,10 +25,10 @@ const ToolScreen = ({navigation}) => {
       renter: "Bob Johnson",
       price: "$25/day",
       image: "https://jamaicaclassifiedonline.com/images/2020/10/28/134621/power-tools-xj7q3sly_0.jpg"
-    }
+          }
   ];
-  const handleToolPress = (tool) => {
-    navigation.navigate('ToolDetailsScreen', {tool});
+ const handleToolPress = (tool) => {
+    navigation.navigate('ContactRenterScreen', {tool});
   };
   
   return (
@@ -32,7 +36,7 @@ const ToolScreen = ({navigation}) => {
       <ScrollView>
         <View>
           <Text style={tw `mt-2 text-lg font-semibold`}>Select A Tool To Rent</Text>
-          <Text style={tw `mt-2 text-lg font-semibold`}>Selecting A Tool Displays Details</Text>
+
           {tools.map((tool, index) => (
             <TouchableOpacity key={index} onPress={() => handleToolPress(tool)}>
               <View>

@@ -12,7 +12,8 @@ import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import ListingScreen from "./screens/ListingScreen";
-
+import SubmitScreen from "./screens/SubmitScreen";
+import ContactRenterScreen from "./screens/ContactRenterScreen";
 
 export default function App() {
     const Stack = createNativeStackNavigator();
@@ -58,14 +59,28 @@ export default function App() {
                               }}
                             />
                             <Stack.Screen
-                                                          name= "ListingScreen"
-                                                          component={ListingScreen}
-                                                          options={{
-                                                          headerShown: false,
-                                                          }}
-                                                        />
+                              name= "ListingScreen"
+                              component={ListingScreen}
+                              options={{
+                              headerShown: false,
+                              }}
+                                />
+                        <Stack.Screen
+                          name= "SubmitScreen"
+                          component={SubmitScreen}
+                          options={{
+                          headerShown: false,
+                          }}
+                        />
+                 <Stack.Screen
+                  name= "ContactRenterScreen"
+                  component={ContactRenterScreen}
+                  options={{
+                  headerShown: false,
+                  }}
+                    />
 
-  </Stack.Navigator>
+           </Stack.Navigator>
 
       </SafeAreaProvider>
       </NavigationContainer>

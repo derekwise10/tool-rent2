@@ -1,7 +1,7 @@
 import React from "react"
 import {StyleSheet, Text, View, SafeAreaView, Image, ScrollView, TouchableOpacity } from "react-native";
 import tw from 'tailwind-react-native-classnames';
-
+import HomeScreen from "../screens/HomeScreen";
 const ToolListScreen = ({navigation}) => {
   const tools = [
     {
@@ -24,7 +24,7 @@ const ToolListScreen = ({navigation}) => {
     }
   ];
   const handleToolPress = (tool) => {
-    navigation.navigate('ToolDetailsListScreen', {tool});
+    navigation.navigate('HomeScreen', {tool});
   };
   
   return (

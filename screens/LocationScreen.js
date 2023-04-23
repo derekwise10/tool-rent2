@@ -6,11 +6,11 @@ import { GOOGLE_MAPS_APIKEY } from "@env";
 import { useDispatch } from "react-redux";
 import { setDestination, setOrigin } from "../slices/navSlice";
 import Map from "../components/Map";
-import MapView from 'react-native-maps';
+import MapView, {PROVIDER_GOOGLE} from 'react-native-maps';
 import NavOptions from "../components/NavOptions";
 import ToolScreen from "./ToolScreen";
 import ToolDetailsScreen from "./ToolDetailsScreen";
-
+import HomeScreen from "../screens/HomeScreen";
 const LocationScreen = ({navigation}) => {
 
  const dispatch =useDispatch();
@@ -30,7 +30,7 @@ const LocationScreen = ({navigation}) => {
             fontSize: 18,
         },
        }}
-       onPress={(data, details=null) => {
+       onPress={(data=null, details=null) => {
                     dispatch(
                        setOrigin({
                          location: details.geometry.location,
@@ -59,9 +59,14 @@ const LocationScreen = ({navigation}) => {
         />
         <Button
         title="List a Tool in your Area"
-        color="#f194ff"
+        color="#000000"
         onPress={() => navigation.navigate("ListingScreen")}
         />
+        <Button
+        title="Home Screen"
+                  color="#90ee90"
+         onPress={()=> navigation.navigate("HomeScreen")}
+                  />
 
     </View>
 

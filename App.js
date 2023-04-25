@@ -6,6 +6,7 @@ import ToolScreen from "./screens/ToolScreen";
 import MessagesScreen from "./screens/MessagesScreen";
 import LocationScreen from "./screens/LocationScreen";
 import AccountScreen from "./screens/AccountScreen";
+import MessageDetailsScreen from "./screens/MessageDetailsScreen";
 import { store } from "./store";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import 'react-native-gesture-handler';
@@ -79,7 +80,14 @@ export default function App() {
                   headerShown: false,
                   }}
                     />
-
+<Stack.Screen
+  name="MessageDetailsScreen"
+  component={MessageDetailsScreen}
+  options={{
+    headerShown: true,
+    title: 'Message',
+  }}
+/>
            </Stack.Navigator>
 
       </SafeAreaProvider>

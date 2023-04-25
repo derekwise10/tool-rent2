@@ -11,7 +11,7 @@ const AccountScreen = () => {
     </SafeAreaView>
 
     )
-
+    
 }
 
 export default AccountScreen

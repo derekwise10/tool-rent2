@@ -18,8 +18,8 @@ const HomeScreen = () => {
        source={require('../assets/tool-rentals.jpg')}/>
        <Text style={tw `mt-2 text-lg font-semibold`}>Please Select An Option </Text>
 
-
         <NavOptions/>
+       <Text style={tw `mt-2 text-lg font-semibold`}>Swipe to the right for more options</Text>
        </View>
         </SafeAreaView>
     );

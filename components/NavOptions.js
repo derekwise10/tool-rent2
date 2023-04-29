@@ -18,7 +18,7 @@ const data =[
   },
   {
   id: "789",
-  title: "User Page",
+  title: "My Account",
   image: "https://assets.onlinelabels.com/images/clip-art/acspike/acspike_male_user_icon.png",
   screen: "AccountScreen",
   },
